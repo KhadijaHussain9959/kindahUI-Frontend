@@ -1,0 +1,381 @@
+<%- include('../Includes/Head.ejs') %>
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/vendors.min.css" />
+    <link href="/css/KendoUi/examples-offline.css" rel="stylesheet" />
+    <link href="/css/KendoUi/kendo.common.min.css" rel="stylesheet" />
+    <link href="/css/KendoUi/kendo.default.min.css" rel="stylesheet" />
+    <link href="/css/KendoUi/kendo.default.mobile.min.css" rel="stylesheet" />
+
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-extended.css" />
+    <link rel="stylesheet" type="text/css" href="/css/colors.css" />
+    <link rel="stylesheet" type="text/css" href="/css/components.css" />
+
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/vertical-menu.css" />
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!-- END: Custom CSS-->
+  </head>
+  <!-- END: Head-->
+
+<!-- body tag and blue nav bar  -->
+<%- include('../Includes/patientNav.ejs') %>
+
+<!-- complete side menu of doctor -->
+<%- include('../Includes/patientSideMenu.ejs') %>
+  
+   
+    <!-- BEGIN: Content-->
+    <hr />
+    <div class="app-content content">
+      <div class="content-overlay"></div>
+      <div class="content-wrapper">
+        <div class="content-header row"></div>
+        <div class="content-body">
+          <div class="d-flex flex-row">
+            <div>
+              <h3>MY BOOKED APPOINTMENTS</h3>
+            </div>
+
+            <div style="margin-left: auto;">
+              <a href="/patientDashboard
+              ">
+                <button
+                  type="button"
+                  class="btn hvr-shutter-in-horizontal"
+                  style="font-size: large;"
+                >
+                  <i class="bx bxs-user-plus viewalldoc-icon"></i>
+                  View Available Doctors
+                </button>
+              </a>
+            </div>
+          </div>
+          <br />
+          <!-- MY APPOINTMENTS START -->
+          <section>
+            <!--primary theme Modal -->
+            <div
+              class="modal fade text-left"
+              id="primary"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel160"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                role="document"
+              >
+                <div class="modal-content">
+                  <div class="modal-header bg-primary">
+                    <h5 class="modal-title white" id="myModalLabel160">
+                      APPOINTMENTS CANCELATION
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <i class="bx bx-x"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Are You Sure You Want to Cancel This Appointment</h5>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="/public/doctors">
+                      <button type="button" class="btn btn-light-secondary">
+                        <i class="bx bx-x d-block d-sm-none"></i>
+                        <span class="d-none d-sm-block">Close</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start booked Appointment -->
+
+            <div class="row trSlot">
+              <div class="col-sm">
+                <div class="media">
+                  <a class="pr-1" href="#">
+                    <img
+                      src="/assets/images/doctorprofile.jpg"
+                      alt="image"
+                      style="height: 60px; width: 60px; border-radius: 50%;"
+                    />
+                  </a>
+                  <div>
+                    <h5 class="media-heading">
+                      <b>Doctor ABC</b>
+                    </h5>
+
+                    <b>Specialization</b>: abc
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm mid-col">
+                <i class="bx bx-time"
+                  ><b class="bold-time">May 27,2020</b
+                  ><b class="bold-time">07:00 PM</b></i
+                >
+              </div>
+              <div class="col-sm trRow">
+                <a href="/patientReqAppointment">
+                  <button type="button" class="btn btn-primary_book">
+                    <i class="bx bxs-pencil"></i>
+                    Edit
+                  </button>
+                </a>
+                <button
+                  type="button"
+                  class="btn btn-primary_book"
+                  data-toggle="modal"
+                  data-target="#primary"
+                  style="margin-left: 1%;"
+                >
+                  <i class="bx bx-check"></i>
+                  Cancel
+                </button>
+              </div>
+            </div>
+
+            <!-- end booked Appointment -->
+
+            <!-- second Appointments -->
+
+            <!-- Start booked Appointment -->
+
+            <div class="row trSlot">
+              <div class="col-sm">
+                <div class="media">
+                  <a class="pr-1" href="#">
+                    <img
+                      src="/assets/images/doctorprofile.jpg"
+                      alt="image"
+                      style="height: 60px; width: 60px; border-radius: 50%;"
+                    />
+                  </a>
+                  <div>
+                    <h5 class="media-heading">
+                      <b>Doctor ABC</b>
+                    </h5>
+
+                    <b>Specialization</b>: abc
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm mid-col">
+                <i class="bx bx-time"
+                  ><b class="bold-time">May 27,2020</b
+                  ><b class="bold-time">07:30 PM</b></i
+                >
+              </div>
+              <div class="col-sm trRow">
+                <a href="/patientReqAppointment">
+                  <button type="button" class="btn btn-primary_book">
+                    <i class="bx bxs-pencil"></i>
+                    Edit
+                  </button>
+                </a>
+                <button
+                  type="button"
+                  class="btn btn-primary_book"
+                  data-toggle="modal"
+                  data-target="#primary"
+                  style="margin-left: 1%;"
+                >
+                  <i class="bx bx-check"></i>
+                  Cancel
+                </button>
+              </div>
+            </div>
+
+            <!-- end booked Appointment -->
+
+            <!-- third booked Appointment -->
+            <!-- Start booked Appointment -->
+
+            <div class="row trSlot">
+              <div class="col-sm">
+                <div class="media">
+                  <a class="pr-1" href="#">
+                    <img
+                      src="/assets/images/doctorprofile.jpg"
+                      alt="image"
+                      style="height: 60px; width: 60px; border-radius: 50%;"
+                    />
+                  </a>
+                  <div>
+                    <h5 class="media-heading">
+                      <b>Doctor ABC</b>
+                    </h5>
+
+                    <b>Specialization</b>: abc
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm mid-col">
+                <i class="bx bx-time"
+                  ><b class="bold-time">June 27,2020</b
+                  ><b class="bold-time">09:00 PM</b></i
+                >
+              </div>
+              <div class="col-sm trRow">
+                <a href="/patientReqAppointment">
+                  <button type="button" class="btn btn-primary_book">
+                    <i class="bx bxs-pencil"></i>
+                    Edit
+                  </button>
+                </a>
+                <button
+                  type="button"
+                  class="btn btn-primary_book"
+                  data-toggle="modal"
+                  data-target="#primary"
+                  style="margin-left: 1%;"
+                >
+                  <i class="bx bx-check"></i>
+                  Cancel
+                </button>
+              </div>
+            </div>
+
+            <!-- end booked Appointment -->
+
+            <!-- fourth booked Appointment -->
+
+            <!-- Start booked Appointment -->
+
+            <div class="row trSlot">
+              <div class="col-sm">
+                <div class="media">
+                  <a class="pr-1" href="#">
+                    <img
+                      src="/assets/images/doctorprofile.jpg"
+                      alt="image"
+                      style="height: 60px; width: 60px; border-radius: 50%;"
+                    />
+                  </a>
+                  <div>
+                    <h5 class="media-heading">
+                      <b>Doctor ABC</b>
+                    </h5>
+
+                    <b>Specialization</b>: abc
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm mid-col">
+                <i class="bx bx-time"
+                  ><b class="bold-time">Sep 27,2020</b
+                  ><b class="bold-time">10:00 PM</b></i
+                >
+              </div>
+              <div class="col-sm trRow">
+                <a href="/patientReqAppointment">
+                  <button type="button" class="btn btn-primary_book">
+                    <i class="bx bxs-pencil"></i>
+                    Edit
+                  </button>
+                </a>
+                <button
+                  type="button"
+                  class="btn btn-primary_book"
+                  data-toggle="modal"
+                  data-target="#primary"
+                  style="margin-left: 1%;"
+                >
+                  <i class="bx bx-check"></i>
+                  Cancel
+                </button>
+              </div>
+            </div>
+            <br />
+
+            <!-- end booked Appointment -->
+          </section>
+
+          <br />
+          <!-- MY APPOINTMENTS ENDS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- END: Content-->
+
+    <!-- END: Content-->
+
+    <script src="/js/vendors.min.js"></script>
+
+    <!-- BEGIN Vendor JS-->
+
+    <script src="/js/vertical-menu-light.js"></script>
+    <script src="/js/app-menu.js"></script>
+    <script src="/js/app.js"></script>
+
+    <!-- END: Theme JS-->
+
+    <!-- //icons on buttons-->
+    <script src="/js/KendoUi/jquery.min.js"></script>
+    <script src="/js/KendoUi/kendo.all.min.js"></script>
+
+    <!-- END: Page JS-->
+
+    <script>
+      $(document).ready(function () {
+        var today = new Date(),
+          events = [
+            +new Date(today.getFullYear(), today.getMonth(), 8),
+            +new Date(today.getFullYear(), today.getMonth(), 12),
+            +new Date(today.getFullYear(), today.getMonth(), 24),
+            +new Date(today.getFullYear(), today.getMonth() + 1, 6),
+            +new Date(today.getFullYear(), today.getMonth() + 1, 7),
+            +new Date(today.getFullYear(), today.getMonth() + 1, 25),
+            +new Date(today.getFullYear(), today.getMonth() + 1, 27),
+            +new Date(today.getFullYear(), today.getMonth() - 1, 3),
+            +new Date(today.getFullYear(), today.getMonth() - 1, 5),
+            +new Date(today.getFullYear(), today.getMonth() - 2, 22),
+            +new Date(today.getFullYear(), today.getMonth() - 2, 27),
+          ];
+
+        $("#scheduler").kendoCalendar({
+          value: today,
+          // dates: events,
+          // month: {
+          //     // template for dates in month view
+          //     content: '# if ($.inArray(+data.date, data.dates) != -1) { #' +
+          //                 '<div class="' +
+          //                    '# if (data.value < 10) { #' +
+          //                        "exhibition" +
+          //                    '# } else if ( data.value < 20 ) { #' +
+          //                        "party" +
+          //                    '# } else { #' +
+          //                        "cocktail" +
+          //                    '# } #' +
+          //                 '">#= data.value #</div>' +
+          //              '# } else { #' +
+          //              '#= data.value #' +
+          //              '# } #'
+          // },
+          footer: false,
+        });
+      });
+    </script>
+
+    <!-- END: JS-->
+  </body>
+  <!-- END: Body-->
+</html>

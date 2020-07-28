@@ -1,0 +1,1193 @@
+<%- include('../Includes/Head.ejs') %>
+    <!-- BEGIN:  CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/vendors.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-extended.css" />
+    <link rel="stylesheet" type="text/css" href="/css/colors.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/components.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vertical-menu.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <!-- forms -->
+    <link rel="stylesheet" type="text/css" href="/css/select2.min.css" />
+    <!-- END: CSS-->
+  </head>
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+
+
+
+
+    <!-- BEGIN: Content-->
+
+    <!-- BEGIN: Content-->
+
+    <div style="padding: 2%;">
+  <br/>
+  
+      <div class="content-wrapper">
+        <div class="content-header row"></div>
+        <div class="content-body">
+        
+        <div >
+          <h3 style="margin-top: 9px; text-align: center;">Patient Video Call</h3>
+        </div>
+
+          <!-- Dashboard Start -->
+          <section id="dashboard-analytics">
+            <div class="callvideo">
+              <div class="row leftcol">
+                <!-- Left Card Starts -->
+
+                <div class="videocol leftcardContainer">
+                  <div class="card">
+                
+                        <div class="pat-video-card">
+                          <div class="pat-call">
+                            <h3 class="call-heading">
+                              Call With Doctor ABC</h3>
+                          </div>
+                        
+                          <div>
+                            <img src="/assets/images/maledoc.png" class="docvideo" />
+                          </div>
+                        </div>
+
+                    <div class="videoimagediv">
+                      <img
+                        src="assets/images/patientview-landscape.jpg"
+                        class="videoimage"
+                      />
+                    </div>
+
+                    <br />
+                    <div style="text-align: center;">
+                      <p>Time Duration: 09:10:60</p>
+                    </div>
+                    <br />
+                    <div class="icons">
+                      <button
+                        type="button"
+                        class="btn btn-icon rounded-circle btn-outline-primary mr-1 mb-1 btn-lg btn-microphone"
+                      >
+                        <i
+                          class="bx bx-microphone icon-size icon-microphone"
+                        ></i>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-icon rounded-circle btn-outline-primary mr-1 mb-1 btn-lg"
+                      >
+                        <i class="bx bx-video icon-size"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-icon rounded-circle btn-outline-danger mr-1 mb-1 btn-lg"
+                      >
+                        <i class="bx bx-phone-call icon-size"></i>
+                      </button>
+                    </div>
+                
+                    <div class="icons">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary round mr-1 mb-1 slide-right"
+                      >
+                        <i class="bx bx-show"></i>
+                        Show Medical Record
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary round mr-1 mb-1 slide-left"
+                      >
+                        <i class="bx bx-hide"></i>
+                        Hide Medical Record
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--Left Card ends -->
+
+                <!-- Right Card Starts -->
+                <div
+                  class="col-lg-6 ideocol rightcardContainer"
+                  style="display: none;"
+                >
+                  <!-- Nav Justified Starts -->
+                  <section id="nav-justified">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="card">
+                          <div class="doc-pres-card">
+                            <div class="card-body">
+                              <ul
+                                class="nav nav-tabs nav-justified"
+                                id="myTab2"
+                                role="tablist"
+                              >
+                                <li class="nav-item">
+                                  <a
+                                    class="nav-link active"
+                                    id="home-tab-justified"
+                                    data-toggle="tab"
+                                    href="#home-just"
+                                    role="tab"
+                                    aria-controls="home-just"
+                                    aria-selected="true"
+                                  >
+                                    Doctor's Note
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a
+                                    class="nav-link"
+                                    id="profile-tab-justified"
+                                    data-toggle="tab"
+                                    href="#profile-just"
+                                    role="tab"
+                                    aria-controls="profile-just"
+                                    aria-selected="true"
+                                  >
+                                    Prescription
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a
+                                    class="nav-link"
+                                    id="messages-tab-justified"
+                                    data-toggle="tab"
+                                    href="#messages-just"
+                                    role="tab"
+                                    aria-controls="messages-just"
+                                    aria-selected="false"
+                                  >
+                                    Visit History
+                                  </a>
+                                </li>
+                              </ul>
+                              <!-- Tab panes -->
+                              <div class="tab-content pt-1">
+                                <div
+                                  class="tab-pane active"
+                                  id="home-just"
+                                  role="tabpanel"
+                                  aria-labelledby="home-tab-justified"
+                                >
+                                  <!-- text areas -->
+                                  <section class="basic-textarea">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="card">
+                                          <div class="card-content">
+                                            <div class="card-body">
+                                              <div class="icons">
+                                                <button
+                                                  type="button"
+                                                  class="btn btn-outline-primary round mr-1 mb-1"
+                                                >
+                                                  <i class="bx bxs-save"></i>
+                                                  Save
+                                                </button>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12">
+                                                  <fieldset class="form-group">
+                                                    <p>HISTORY AND EXAMS</p>
+                                                    <textarea
+                                                      class="form-control"
+                                                      id="basicTextarea"
+                                                      rows="3"
+                                                    ></textarea>
+                                                  </fieldset>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12">
+                                                  <fieldset class="form-group">
+                                                    <p>ALLERGIES</p>
+                                                    <textarea
+                                                      class="form-control"
+                                                      id="basicTextarea"
+                                                      rows="3"
+                                                    ></textarea>
+                                                  </fieldset>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12">
+                                                  <fieldset class="form-group">
+                                                    <p>DIAGNOSIS</p>
+                                                    <textarea
+                                                      class="form-control"
+                                                      id="basicTextarea"
+                                                      rows="3"
+                                                    ></textarea>
+                                                  </fieldset>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12">
+                                                  <fieldset class="form-group">
+                                                    <p>RX</p>
+                                                    <textarea
+                                                      class="form-control"
+                                                      id="basicTextarea"
+                                                      rows="3"
+                                                    ></textarea>
+                                                  </fieldset>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </section>
+                                  <!-- text area ends -->
+                                </div>
+                                <div
+                                  class="tab-pane"
+                                  id="profile-just"
+                                  role="tabpanel"
+                                  aria-labelledby="profile-tab-justified"
+                                >
+                                  <!-- Form of Prescription start -->
+                                  <section id="basic-vertical-layouts">
+                                    <div class="row match-height">
+                                      <div class="col-12">
+                                        <div class="card">
+                                          <div class="card-content">
+                                            <div class="card-body">
+                                              <div class="icons">
+                                                <button
+                                                  type="button"
+                                                  class="btn btn-outline-primary round mr-1 mb-1"
+                                                >
+                                                  <i class="bx bxs-save"></i>
+                                                  Save and Send
+                                                </button>
+                                              </div>
+                                              <br />
+                                              <form class="form form-vertical">
+                                                <div class="form-body">
+                                                  <div class="row">
+                                                    <div
+                                                      style="
+                                                        text-align: center;
+                                                      "
+                                                    >
+                                                      <h6>
+                                                        Patient Prescription
+                                                      </h6>
+                                                      <br />
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                      <div
+                                                        class="form-label-group"
+                                                      >
+                                                        <input
+                                                          type="text"
+                                                          id="first-name-floating"
+                                                          class="form-control"
+                                                          placeholder="Patient Name"
+                                                          name="fname-floating"
+                                                        />
+                                                        <label
+                                                          for="first-name-floating"
+                                                        >
+                                                          Name</label
+                                                        > abc
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                      <div
+                                                        class="form-label-group"
+                                                      >
+                                                        <input
+                                                          type="text"
+                                                          id="first-name-floating"
+                                                          class="form-control"
+                                                          placeholder="Age"
+                                                          name="fname-floating"
+                                                        />
+                                                        <label
+                                                          for="first-name-floating"
+                                                          >Age</label
+                                                        >
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <div
+                                                        class="form-label-group"
+                                                      >
+                                                        <input
+                                                          type="text"
+                                                          id="first-name-floating"
+                                                          class="form-control"
+                                                          placeholder="Date"
+                                                          name="fname-floating"
+                                                        />
+                                                        <label
+                                                          for="first-name-floating"
+                                                          >Date</label
+                                                        >
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                      <div
+                                                        class="form-label-group"
+                                                      >
+                                                        <input
+                                                          type="text"
+                                                          id="first-name-floating"
+                                                          class="form-control"
+                                                          placeholder="Diagnosis"
+                                                          name="fname-floating"
+                                                        />
+                                                        <label
+                                                          for="first-name-floating"
+                                                          >Diagnosis</label
+                                                        >
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <fieldset
+                                                        class="form-group"
+                                                      >
+                                                        <textarea
+                                                          class="form-control"
+                                                          id="roundText"
+                                                          rows="3"
+                                                          placeholder="Medication"
+                                                        ></textarea>
+                                                      </fieldset>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </section>
+                                  <!-- form of Prescription ends -->
+                                </div>
+                                <div
+                                  class="tab-pane"
+                                  id="messages-just"
+                                  role="tabpanel"
+                                  aria-labelledby="messages-tab-justified"
+                                >
+                                  <!--  rows start -->
+                                  <div class="row" id="table-striped">
+                                    <div class="col-12">
+                                      <div class="card">
+                                        <div class="card-content">
+                                          <!-- table striped -->
+                                          <div class="table-responsive">
+                                            <table
+                                              class="table table-striped mb-0"
+                                            >
+                                              <thead>
+                                                <tr>
+                                                  <th>Date</th>
+                                                  <th>DocName</th>
+                                                  <th>Prescription</th>
+                                                  <th>View</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody
+                                                class="visit-history-table"
+                                              >
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                      <!--primary theme Modal -->
+                                                      <div
+                                                        class="modal fade text-left"
+                                                        id="viewprescription"
+                                                        tabindex="-1"
+                                                        role="dialog"
+                                                        aria-labelledby="myModalLabel160"
+                                                        aria-hidden="true"
+                                                      >
+                                                        <div
+                                                          class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                          role="document"
+                                                        >
+                                                          <div
+                                                            class="modal-content"
+                                                          >
+                                                            <div
+                                                              class="modal-header bg-primary"
+                                                            >
+                                                              <h5
+                                                                class="modal-title white"
+                                                                id="myModalLabel160"
+                                                              >
+                                                                PATIENT
+                                                                PRESCRIPTION
+                                                              </h5>
+                                                            </div>
+                                                            <div
+                                                              class="modal-body"
+                                                            >
+                                                              <div
+                                                                class="card-content side-bar"
+                                                              >
+                                                                <div
+                                                                  class="card-body"
+                                                                >
+                                                                  <div
+                                                                    class="media"
+                                                                  >
+                                                                    <a
+                                                                      class="pr-1"
+                                                                      href="#"
+                                                                    >
+                                                                      <img
+                                                                        src="/assets/images/doctorprofile.jpg"
+                                                                        alt="image"
+                                                                        style="
+                                                                          height: 100px;
+                                                                          width: 100px;
+                                                                          border-radius: 50%;
+                                                                          margin-left: 12px;
+                                                                        "
+                                                                      />
+                                                                    </a>
+                                                                    <div>
+                                                                      <h5
+                                                                        class="media-heading"
+                                                                      >
+                                                                        <br />
+                                                                        <b
+                                                                          >PATIENT
+                                                                          ABC</b
+                                                                        >
+                                                                      </h5>
+                                                                      <div>
+                                                                        <p>
+                                                                          <b
+                                                                            >Contact
+                                                                            Number</b
+                                                                          >:
+                                                                          12245476786
+                                                                        </p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div
+                                                                    class="text-sidebar"
+                                                                  >
+                                                                    <br />
+
+                                                                    <div>
+                                                                      <h6>
+                                                                        <b
+                                                                          >Age:</b
+                                                                        >
+                                                                      </h6>
+                                                                      <br />
+                                                                      <h6>
+                                                                        <b
+                                                                          >Date:</b
+                                                                        >
+                                                                      </h6>
+                                                                      <br />
+                                                                      <h6>
+                                                                        <b
+                                                                          >Diagnosis:</b
+                                                                        >
+                                                                      </h6>
+                                                                      <br />
+                                                                      <h6>
+                                                                        <b
+                                                                          >Medication:</b
+                                                                        >
+                                                                      </h6>
+                                                                      <br />
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div
+                                                              class="modal-footer"
+                                                            >
+                                                              <button
+                                                                type="button"
+                                                                class="btn btn-light-secondary"
+                                                                data-dismiss="modal"
+                                                              >
+                                                                <i
+                                                                  class="bx bx-x d-block d-sm-none"
+                                                                ></i>
+                                                                <span
+                                                                  class="d-none d-sm-block"
+                                                                  >Close</span
+                                                                >
+                                                              </button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                      <!--primary theme Modal -->
+                                                      <div
+                                                        class="modal fade text-left"
+                                                        id="viewhistory"
+                                                        tabindex="-1"
+                                                        role="dialog"
+                                                        aria-labelledby="myModalLabel160"
+                                                        aria-hidden="true"
+                                                      >
+                                                        <div
+                                                          class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                          role="document"
+                                                        >
+                                                          <div
+                                                            class="modal-content"
+                                                          >
+                                                            <div
+                                                              class="modal-header bg-primary"
+                                                            >
+                                                              <h5
+                                                                class="modal-title white"
+                                                                id="myModalLabel160"
+                                                              >
+                                                                PATIENT HISTORY
+                                                              </h5>
+                                                            </div>
+                                                            <div
+                                                              class="modal-body History-modal"
+                                                            >
+                                                              <div
+                                                                class="card-content side-bar"
+                                                              >
+                                                                <div
+                                                                  class="card-body"
+                                                                >
+                                                                  <br />
+                                                                  <div
+                                                                    class="media"
+                                                                  >
+                                                                    <a
+                                                                      class="pr-1"
+                                                                      href="#"
+                                                                    >
+                                                                      <img
+                                                                        src="/assets/images/doctorprofile.jpg"
+                                                                        alt="image"
+                                                                        style="
+                                                                          height: 100px;
+                                                                          width: 100px;
+                                                                          border-radius: 50%;
+                                                                          margin-left: 12px;
+                                                                        "
+                                                                      />
+                                                                    </a>
+                                                                    <div>
+                                                                      <h5
+                                                                        class="media-heading"
+                                                                      >
+                                                                        PATIENT
+                                                                        ABC
+                                                                      </h5>
+                                                                      <div>
+                                                                        <p>
+                                                                          <b
+                                                                            >Age</b
+                                                                          >: ABC
+                                                                          years
+                                                                          old
+                                                                          <br />
+                                                                          <b
+                                                                            >Visit
+                                                                            Number</b
+                                                                          >:May
+                                                                          02 ,
+                                                                          2020
+                                                                          <br />
+                                                                          <b
+                                                                            >Contact
+                                                                            Number</b
+                                                                          >:
+                                                                          12245476786
+                                                                        </p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div
+                                                                    class="text-sidebar"
+                                                                  >
+                                                                    <br />
+                                                                    <div>
+                                                                      <br />
+                                                                      <div>
+                                                                        <h6>
+                                                                          <b
+                                                                            >History
+                                                                            and
+                                                                            Exams</b
+                                                                          >
+                                                                        </h6>
+                                                                        <p>
+                                                                          Cookie
+                                                                          candy
+                                                                          dragée
+                                                                          marzipan
+                                                                          gingerbread
+                                                                          pie
+                                                                          pudding.
+                                                                          Brownie
+                                                                          fruitcake
+                                                                          wafer
+                                                                          bonbon
+                                                                          gummi
+                                                                          bears
+                                                                          apple
+                                                                          pie.
+                                                                        </p>
+                                                                      </div>
+
+                                                                      <div>
+                                                                        <h6>
+                                                                          <b
+                                                                            >Allergies</b
+                                                                          >
+                                                                        </h6>
+                                                                        <p>
+                                                                          Cookie
+                                                                          candy
+                                                                          dragée
+                                                                          marzipan
+                                                                          gingerbread
+                                                                          pie
+                                                                          pudding.
+                                                                          Brownie
+                                                                          fruitcake
+                                                                          wafer
+                                                                          bonbon
+                                                                          gummi
+                                                                          bears
+                                                                          apple
+                                                                          pie.
+                                                                        </p>
+                                                                      </div>
+
+                                                                      <div>
+                                                                        <h6>
+                                                                          <b
+                                                                            >Diagnosis</b
+                                                                          >
+                                                                        </h6>
+                                                                        <p>
+                                                                          Cookie
+                                                                          candy
+                                                                          dragée
+                                                                          marzipan
+                                                                          gingerbread
+                                                                          pie
+                                                                          pudding.
+                                                                          Brownie
+                                                                          fruitcake
+                                                                          wafer
+                                                                          bonbon
+                                                                          gummi
+                                                                          bears
+                                                                          apple
+                                                                          pie.
+                                                                        </p>
+                                                                      </div>
+
+                                                                      <div>
+                                                                        <h6>
+                                                                          <b
+                                                                            >RX</b
+                                                                          >
+                                                                        </h6>
+                                                                        <p>
+                                                                          Cookie
+                                                                          candy
+                                                                          dragée
+                                                                          marzipan
+                                                                          gingerbread
+                                                                          pie
+                                                                          pudding.
+                                                                          Brownie
+                                                                          fruitcake
+                                                                          wafer
+                                                                          bonbon
+                                                                          gummi
+                                                                          bears
+                                                                          apple
+                                                                          pie.
+                                                                        </p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div
+                                                              class="modal-footer"
+                                                            >
+                                                              <button
+                                                                type="button"
+                                                                class="btn btn-light-secondary"
+                                                                data-dismiss="modal"
+                                                              >
+                                                                <i
+                                                                  class="bx bx-x d-block d-sm-none"
+                                                                ></i>
+                                                                <span
+                                                                  class="d-none d-sm-block"
+                                                                  >Close</span
+                                                                >
+                                                              </button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                      <!--primary theme Modal -->
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sep 20,2020</td>
+                                                  <td>Doctor ABC</td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewprescription"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div
+                                                      class="modal-primary mr-1 mb-1 d-inline-block"
+                                                    >
+                                                      <!-- Button trigger for primary themes modal -->
+                                                      <a href="#">
+                                                        <i
+                                                          class="bx bx-show dashboard-eyeicon"
+                                                          data-toggle="modal"
+                                                          data-target="#viewhistory"
+                                                          style="
+                                                            padding-top: 12px;
+                                                          "
+                                                        ></i>
+                                                      </a>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--  rows end -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Nav Justified Ends -->
+                </div>
+                <!--Right Card ends -->
+              </div>
+
+              <!-- <button
+                type="button"
+                class="btn btn-light-danger mr-1 mb-1"
+                style="float: right;"
+              >
+                <i class="bx bxs-conversation"></i>
+                <span class="ml-25">Chat with Us</span>
+              </button> -->
+            </div>
+          </section>
+          <!-- Dashboard  end -->
+        </div>
+      </div>
+    </div>
+    <!-- END: Content-->
+
+    <!-- END: Content-->
+
+    <!-- BEGIN: JS-->
+    <script src="/js/vendors.min.js"></script>
+
+    <script src="/js/vertical-menu-light.js"></script>
+    <script src="/js/app-menu.js"></script>
+    <script src="/js/app.js"></script>
+
+    <!-- for dropdowns -->
+
+    <script src="/js/form-select2.js"></script>
+    <script src="/js/select2.full.min.js"></script>
+
+    <!-- for slide in video call page -->
+
+    <script src="/js/slidevideocall.js"></script>
+    <script src="/js/navs.js"></script>
+    <!-- END: JS-->
+
+    <%- include('../Includes/End.ejs') %>

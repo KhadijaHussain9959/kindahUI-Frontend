@@ -1,0 +1,861 @@
+<%- include('../Includes/Head.ejs') %>
+
+    <!-- BEGIN:  CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/vendors.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-extended.css" />
+    <link rel="stylesheet" type="text/css" href="/css/colors.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/components.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vertical-menu.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/app-kanban.css" />
+    <!-- END: CSS-->
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<!-- body tag and blue nav bar  -->
+<%- include('../Includes/docNav.ejs') %>
+
+    <!-- complete side menu of doctor -->
+    <%- include('../Includes/docSideMenu.ejs') %>
+
+    <!-- BEGIN: Content-->
+
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row"></div>
+            <div class="content-body">
+                <br />
+                <div class="d-flex flex-row">
+                    <div class="page-heading">
+                        <h3>DOCTOR DASHBOARD</h3>
+                    </div>
+                </div>
+
+                <!-- Dashboard Start -->
+                <section id="dashboard-analytics">
+                    <div class="row">
+                        <!-- Scheduled appointment Starts -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card widget-todo" style="height: 450px; overflow: auto;">
+                                        <div
+                                            class="card-header border-bottom d-flex justify-content-between align-items-center flex-wrap dashboard-heading-1">
+                                            <h6 class="card-title d-flex mb-25 mb-sm-0 dashboard-headings">
+                                                SCHEDULED APPOINTMENTS
+                                            </h6>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <ul class="widget-timeline mb-0">
+                                                    <li class="timeline-items timeline-icon-primary active pb-0">
+                                                        <div class="timeline-time">
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary round mr-1 mb-1">
+                                                                <i class="bx bx-purchase-tag"></i>
+                                                                <b>Check in</b>
+                                                            </button>
+                                                        </div>
+                                                        <h6 class="timeline-title">
+                                                            Patient ABC
+                                                        </h6>
+                                                        <p class="timeline-text">
+                                                            34567891234
+                                                            <br />
+                                                            Dec 10,2020 05:45PM
+                                                        </p>
+                                                    </li>
+
+                                                    <li class="timeline-items timeline-icon-primary active pb-0">
+                                                        <div class="timeline-time">
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary round mr-1 mb-1">
+                                                                <i class="bx bx-purchase-tag"></i>
+                                                                <b>Check in</b>
+                                                            </button>
+                                                        </div>
+                                                        <h6 class="timeline-title">
+                                                            Patient ABC
+                                                        </h6>
+                                                        <p class="timeline-text">
+                                                            34567891234
+                                                            <br />
+                                                            Dec 10,2020 05:45PM
+                                                        </p>
+                                                    </li>
+                                                    <li class="timeline-items timeline-icon-primary active pb-0">
+                                                        <div class="timeline-time">
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary round mr-1 mb-1">
+                                                                <i class="bx bx-purchase-tag"></i>
+                                                                <b>Check in</b>
+                                                            </button>
+                                                        </div>
+                                                        <h6 class="timeline-title">
+                                                            Patient ABC
+                                                        </h6>
+                                                        <p class="timeline-text">
+                                                            34567891234
+                                                            <br />
+                                                            Dec 10,2020 05:45PM
+                                                        </p>
+                                                    </li>
+                                                    <li class="timeline-items timeline-icon-primary active pb-0">
+                                                        <div class="timeline-time">
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary round mr-1 mb-1">
+                                                                <i class="bx bx-purchase-tag"></i>
+                                                                <b>Check in</b>
+                                                            </button>
+                                                        </div>
+                                                        <h6 class="timeline-title">
+                                                            Patient ABC
+                                                        </h6>
+                                                        <p class="timeline-text">
+                                                            34567891234
+                                                            <br />
+                                                            Dec 10,2020 05:45PM
+                                                        </p>
+                                                    </li>
+                                                    <li class="timeline-items timeline-icon-primary active pb-0">
+                                                        <div class="timeline-time">
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary round mr-1 mb-1">
+                                                                <i class="bx bx-purchase-tag"></i>
+                                                                <b>Check in</b>
+                                                            </button>
+                                                        </div>
+                                                        <h6 class="timeline-title">
+                                                            Patient ABC
+                                                        </h6>
+                                                        <p class="timeline-text">
+                                                            34567891234
+                                                            <br />
+                                                            Dec 10,2020 05:45PM
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Scheduled appointment ends -->
+
+                        <!-- Direct Calls Card Starts -->
+                        <div class="col-sm-6">
+                            <div class="card" style="height: 450px; overflow: auto;">
+                                <div class="card-header dashboard-heading-1">
+                                    <h6 class="card-title dashboard-headings">
+                                        DIRECT CALLS
+                                    </h6>
+                                </div>
+                                <hr />
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <ul class="widget-timeline" style="list-style: none;">
+                                            <li class="timeline-items timeline-icon-primary active pb-0">
+                                                <div class="timeline-time">
+                                                    <button type="button"
+                                                        class="btn btn-outline-primary round mr-1 mb-1">
+                                                        <i class="bx bx-purchase-tag"></i>
+                                                        <b>Check in</b>
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-icon rounded-circle btn-outline-danger mr-1 mb-1">
+                                                        <i class="bx bx-x"></i>
+                                                    </button>
+                                                </div>
+                                                <h6 class="timeline-title">
+                                                    Patient XYZ
+                                                </h6>
+                                                <p class="timeline-text">Dec 20,2020 05:00PM</p>
+                                            </li>
+                                            <li class="timeline-items timeline-icon-primary active pb-0">
+                                                <div class="timeline-time">
+                                                    <button type="button"
+                                                        class="btn btn-outline-primary round mr-1 mb-1">
+                                                        <i class="bx bx-purchase-tag"></i>
+                                                        <b>Check in</b>
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-icon rounded-circle btn-outline-danger mr-1 mb-1">
+                                                        <i class="bx bx-x"></i>
+                                                    </button>
+                                                </div>
+                                                <h6 class="timeline-title">
+                                                    Patient XYZ
+                                                </h6>
+                                                <p class="timeline-text">Dec 20,2020 05:00PM</p>
+                                            </li>
+                                            <li class="timeline-items timeline-icon-primary active pb-0">
+                                                <div class="timeline-time">
+                                                    <button type="button"
+                                                        class="btn btn-outline-primary round mr-1 mb-1">
+                                                        <i class="bx bx-purchase-tag"></i>
+                                                        <b>Check in</b>
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-icon rounded-circle btn-outline-danger mr-1 mb-1">
+                                                        <i class="bx bx-x"></i>
+                                                    </button>
+                                                </div>
+                                                <h6 class="timeline-title">
+                                                    Patient XYZ
+                                                </h6>
+                                                <p class="timeline-text">Dec 20,2020 05:00PM</p>
+                                            </li>
+                                            <li class="timeline-items timeline-icon-primary active pb-0">
+                                                <div class="timeline-time">
+                                                    <button type="button"
+                                                        class="btn btn-outline-primary round mr-1 mb-1">
+                                                        <i class="bx bx-purchase-tag"></i>
+                                                        <b>Check in</b>
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-icon rounded-circle btn-outline-danger mr-1 mb-1">
+                                                        <i class="bx bx-x"></i>
+                                                    </button>
+                                                </div>
+                                                <h6 class="timeline-title">
+                                                    Patient XYZ
+                                                </h6>
+                                                <p class="timeline-text">Dec 20,2020 05:00PM</p>
+                                            </li>
+                                            <li class="timeline-items timeline-icon-primary active pb-0">
+                                                <div class="timeline-time">
+                                                    <button type="button"
+                                                        class="btn btn-outline-primary round mr-1 mb-1">
+                                                        <i class="bx bx-purchase-tag"></i>
+                                                        <b>Check in</b>
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-icon rounded-circle btn-outline-danger mr-1 mb-1">
+                                                        <i class="bx bx-x"></i>
+                                                    </button>
+                                                </div>
+                                                <h6 class="timeline-title">
+                                                    Patient XYZ
+                                                </h6>
+                                                <p class="timeline-text">Dec 20,2020 05:00PM</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Direct Calls Card ends -->
+                    </div>
+                </section>
+                <!-- Dashboard  end -->
+
+                <!-- Call Queue Start -->
+                <section id="table-Marketing">
+                    <div class="card" style="height: 215px; overflow: auto;">
+                        <div class="card-header call-queue-head">
+                            <h6 class="card-title dashboard-headings">CALL QUEUE</h6>
+                            <div class="heading-elements"></div>
+                        </div>
+                        <hr />
+                        <div class="card-content">
+                            <div class="card-body pb-0">
+                                <!-- Patient one  -->
+                                <div class="row" style="margin: 1%;">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="d-inline-block">
+                                            <div class="row">
+                                                <div class="pr-50" style="display: inline-block; align-self: stretch;">
+                                                    <img src="/assets/images/doctorprofile.jpg" alt="avtar img holder"
+                                                        style="
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                                vertical-align: unset;
+                              " />
+                                                </div>
+
+                                                <div style="display: inline-block;">
+                                                    <h6 style="padding-top: 2%;">
+                                                        <b>Patient ABC</b> &nbsp; (<span
+                                                            class="bullet bullet-success bullet-sm"></span>
+                                                        <span style="
+                                  margin-left: 1%;
+                                  color: #39da8a;
+                                  font-weight: 300;
+                                "><b>online - Direct call</b></span>)
+                                                    </h6>
+
+                                                    <p><b>Contact :</b> 03456782145</p>
+                                                    <p><b>Patient waiting since :</b> 15 min 20 sec</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 text-md-right">
+                                        <div class="row call-Queue-icons">
+                                            <a >
+                                                <button type="button" onclick="myFunction()" class="btn btn-outline-primary round mr-1 mb-1">
+                                                    <i class="bx bx-microphone"></i>
+                                                    <b>Audio</b>
+                                                </button>
+                                            </a>
+
+                                            <a >
+                                                <button type="button" onclick="myFunction()" class="btn btn-outline-primary round mr-1 mb-1">
+                                                    <i class="bx bx-video"></i>
+                                                    <b>Video</b>
+                                                </button>
+                                            </a>
+
+                                            <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                <!-- Button for SMS Popup -->
+                                                <button type="button" class="btn btn-outline-primary round"
+                                                    data-toggle="modal" data-target="#primary">
+                                                    <i class="bx bxs-chat"></i>
+                                                    <b>SMS</b>
+                                                </button>
+
+                                                <!--SMS pop up -->
+                                                <div class="modal fade text-left" id="primary" tabindex="-1"
+                                                    role="dialog" aria-labelledby="myModalLabel160" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                        role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header bg-primary">
+                                                                <h5 class="modal-title white" id="myModalLabel160">
+                                                                    SEND MESSAGE
+                                                                </h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form action="#">
+                                                                    <label>Enter Your Message Here </label>
+                                                                    <textarea class="form-control" id="basicTextarea"
+                                                                        rows="4"
+                                                                        placeholder="Hello I am Doctor ABC . Your consultation Session will be start in 15minutes. Please stay Online. Thank you"></textarea>
+                                                                </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light-secondary"
+                                                                    data-dismiss="modal">
+                                                                    <span class="d-none d-sm-block">Close<i
+                                                                            class="bx bx-x sms-popup"></i></span>
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary ml-1"
+                                                                    data-dismiss="modal">
+                                                                    <span class="d-none d-sm-block">Send<i
+                                                                            class="bx bx-send sms-popup"></i></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- patient one ends -->
+                                <hr />
+                                <!-- patient 2 in queue -->
+                                <div class="row" style="margin: 1%;">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="d-inline-block">
+                                            <div class="row">
+                                                <div class="pr-50" style="display: inline-block; align-self: stretch;">
+                                                    <img src="/assets/images/doctorprofile.jpg" alt="avtar img holder"
+                                                        style="
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                                vertical-align: unset;
+                              " />
+                                                </div>
+
+                                                <div style="display: inline-block;">
+                                                    <h6 style="padding-top: 2%;">
+                                                        <b>Patient ABC</b> &nbsp;
+                                                        <span class="bullet bullet-success bullet-sm"></span>
+                                                        <span style="
+                                  margin-left: 1%;
+                                  color: #39da8a;
+                                  font-weight: 300;
+                                "><b>online - Direct call</b></span>)
+                                                    </h6>
+
+                                                    <p><b>Contact :</b> 03456782145</p>
+                                                    <p><b>Patient waiting since :</b> 15 min 20 sec</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 text-md-right">
+                                        <div class="row call-Queue-icons">
+                                            <a href="/docVideoCall">
+                                                <button type="button" class="btn btn-outline-primary round mr-1 mb-1">
+                                                    <i class="bx bx-microphone"></i>
+                                                    <b>Audio</b>
+                                                </button>
+                                            </a>
+                                            <a href="/docVideoCall">
+                                                <button type="button" class="btn btn-outline-primary round mr-1 mb-1">
+                                                    <i class="bx bx-video"></i>
+                                                    <b>Video</b>
+                                                </button>
+                                            </a>
+
+                                            <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                <!-- Button for SMS Popup -->
+                                                <button type="button" class="btn btn-outline-primary round"
+                                                    data-toggle="modal" data-target="#primary">
+                                                    <i class="bx bxs-chat"></i>
+                                                    <b>SMS</b>
+                                                </button>
+
+                                                <!--SMS pop up -->
+                                                <div class="modal fade text-left" id="primary" tabindex="-1"
+                                                    role="dialog" aria-labelledby="myModalLabel160" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                        role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header bg-primary">
+                                                                <h5 class="modal-title white" id="myModalLabel160">
+                                                                    SEND MESSAGE
+                                                                </h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form action="#">
+                                                                    <label>Enter Your Message Here </label>
+                                                                    <textarea class="form-control" id="basicTextarea"
+                                                                        rows="4"
+                                                                        placeholder="Hello I am Doctor ABC . Your consultation Session will be start in 15minutes. Please stay Online. Thank you"></textarea>
+                                                                </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light-secondary"
+                                                                    data-dismiss="modal">
+                                                                    <span class="d-none d-sm-block">Close<i
+                                                                            class="bx bx-x sms-popup"></i></span>
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary ml-1"
+                                                                    data-dismiss="modal">
+                                                                    <span class="d-none d-sm-block">Send<i
+                                                                            class="bx bx-send sms-popup"></i></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- patient two ends -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call Queue Ends -->
+
+                <!-- Previous Patient table start -->
+
+                <div class="row" id="table-hover-row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header call-log-header">
+                                <h6 class="card-title dashboard-headings">
+                                    RECENT CALL LOGS
+                                </h6>
+                            </div>
+                            <hr />
+                            <div class="card-content">
+                                <!-- table hover -->
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0 tblCallLogs">
+                                        <thead class="tablehead">
+                                            <tr>
+                                                <th class="tableheader">CONSULTATION</th>
+                                                <th class="tableheader">PHONE</th>
+                                                <th class="tableheader">DATE & TIME</th>
+
+                                                <th class="tableheader">DURATION</th>
+                                                <th class="tableheader">ACTIVITY</th>
+                                                <th class="tableheader">ACTIONS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Doctor ABC</td>
+                                                <td>09034567832</td>
+                                                <td>
+                                                    Sep05,2020 07:00 AM
+                                                </td>
+                                                <td>20 min</td>
+
+                                                <td>
+                                                    <a href="#" class="complete-btn">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary round mr-1 mb-1 btn-sm">
+                                                            Complete
+                                                        </button>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                        <!-- Button trigger for primary themes modal -->
+                                                        <a href="#">
+                                                            <i class="bx bx-show dashboard-eyeicon" data-toggle="modal"
+                                                                data-target="#viewhistory"></i>
+                                                        </a>
+                                                        <!--primary theme Modal -->
+                                                        <div class="modal fade text-left" id="viewhistory" tabindex="-1"
+                                                            role="dialog" aria-labelledby="myModalLabel160"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                                role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header bg-primary">
+                                                                        <h5 class="modal-title white"
+                                                                            id="myModalLabel160">
+                                                                            PATIENT HISTORY
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="card-content side-bar">
+                                                                            <div class="card-body">
+                                                                                <div class="media">
+                                                                                    <a class="pr-1" href="#">
+                                                                                        <img src="/assets/images/doctorprofile.jpg"
+                                                                                            alt="image" style="
+                                                  height: 100px;
+                                                  width: 100px;
+                                                  border-radius: 50%;
+                                                " />
+                                                                                    </a>
+                                                                                    <div>
+                                                                                        <h5 class="media-heading">
+                                                                                            PATIENT ABC
+                                                                                        </h5>
+                                                                                        <div>
+                                                                                            <p>
+                                                                                                <b>Age</b>: ABC years
+                                                                                                old
+                                                                                                <br />
+                                                                                                <b>Visit Number</b>:May
+                                                                                                02 ,
+                                                                                                2020
+                                                                                                <br />
+                                                                                                <b>Contact Number</b>:
+                                                                                                12245476786
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                    <br />
+                                                                                    <div>
+                                                                                        <h6>
+                                                                                            <b>History and Exams</b>
+                                                                                        </h6>
+                                                                                        <p>
+                                                                                            Cookie candy dragée marzipan
+                                                                                            gingerbread pie pudding.
+                                                                                            Brownie
+                                                                                            fruitcake wafer bonbon gummi
+                                                                                            bears apple pie.
+                                                                                        </p>
+                                                                                    </div>
+
+                                                                                    <div>
+                                                                                        <h6>
+                                                                                            <b>Allergies</b>
+                                                                                        </h6>
+                                                                                        <p>
+                                                                                            Cookie candy dragée marzipan
+                                                                                            gingerbread pie pudding.
+                                                                                            Brownie
+                                                                                            fruitcake wafer bonbon gummi
+                                                                                            bears apple pie.
+                                                                                        </p>
+                                                                                    </div>
+
+                                                                                    <div>
+                                                                                        <h6>
+                                                                                            <b>Diagnosis</b>
+                                                                                        </h6>
+                                                                                        <p>
+                                                                                            Cookie candy dragée marzipan
+                                                                                            gingerbread pie pudding.
+                                                                                            Brownie
+                                                                                            fruitcake wafer bonbon gummi
+                                                                                            bears apple pie.
+                                                                                        </p>
+                                                                                    </div>
+
+                                                                                    <div>
+                                                                                        <h6>
+                                                                                            <b>RX</b>
+                                                                                        </h6>
+                                                                                        <p>
+                                                                                            Cookie candy dragée marzipan
+                                                                                            gingerbread pie pudding.
+                                                                                            Brownie
+                                                                                            fruitcake wafer bonbon gummi
+                                                                                            bears apple pie.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-light-secondary"
+                                                                            data-dismiss="modal">
+                                                                            <i class="bx bx-x d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Close</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- modal on prescription icon -->
+
+                                                    <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                        <!-- Button trigger for primary themes modal -->
+
+                                                        <a href="#">
+                                                            <i class="bx bxs-file-plus dashboard-eyeicon"
+                                                                data-toggle="modal" data-target="#prescription"></i>
+                                                        </a>
+
+                                                        <div class="modal fade text-left" id="prescription"
+                                                            tabindex="-1" role="dialog"
+                                                            aria-labelledby="myModalLabel160" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                                role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header bg-primary">
+                                                                        <h5 class="modal-title white"
+                                                                            id="myModalLabel160">
+                                                                            PATIENT HISTORY
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="card-content side-bar">
+                                                                            <div class="card-body">
+                                                                                <div class="media">
+                                                                                    <a class="pr-1" href="#">
+                                                                                        <img src="/assets/images/doctorprofile.jpg"
+                                                                                            alt="image" style="
+                                                  height: 100px;
+                                                  width: 100px;
+                                                  border-radius: 50%;
+                                                " />
+                                                                                    </a>
+                                                                                    <div>
+                                                                                        <h5 class="media-heading">
+                                                                                            PATIENT ABC
+                                                                                        </h5>
+                                                                                        <div>
+                                                                                            <p>
+                                                                                                <b>Age</b>: ABC years
+                                                                                                old
+                                                                                                <br />
+                                                                                                <b>Visit Number</b>:May
+                                                                                                02 ,
+                                                                                                2020
+                                                                                                <br />
+                                                                                                <b>Contact Number</b>:
+                                                                                                12245476786
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <form action="#">
+                                                                                    <label
+                                                                                        class="prescription-card">History
+                                                                                        and Exams</label>
+                                                                                    <textarea class="form-control"
+                                                                                        id="basicTextarea" rows="3"
+                                                                                        placeholder="Write your prescription"></textarea>
+                                                                                    <label
+                                                                                        class="prescription-card">Allergies
+                                                                                    </label>
+                                                                                    <textarea class="form-control"
+                                                                                        id="basicTextarea" rows="3"
+                                                                                        placeholder="Write your prescription"></textarea>
+                                                                                    <label
+                                                                                        class="prescription-card">Diagnosis
+                                                                                    </label>
+                                                                                    <textarea class="form-control"
+                                                                                        id="basicTextarea" rows="3"
+                                                                                        placeholder="Write your prescription"></textarea>
+                                                                                    <label class="prescription-card">RX
+                                                                                    </label>
+                                                                                    <textarea class="form-control"
+                                                                                        id="basicTextarea" rows="3"
+                                                                                        placeholder="Write your prescription"></textarea>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-light-primary"
+                                                                            data-dismiss="modal">
+                                                                            <i
+                                                                                class="bx bx-check d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Save</span>
+                                                                        </button>
+                                                                        <button type="button"
+                                                                            class="btn btn-light-secondary"
+                                                                            data-dismiss="modal">
+                                                                            <i class="bx bx-x d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Close</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- modal on eye icon close-->
+                                                    <a href="/docVideoCall">
+                                                        <i class="bx bx-microphone"></i>
+                                                    </a>
+
+                                                    <a href="/docVideoCall">
+                                                        <i class="bx bx-video"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Doctor ABC</td>
+                                                <td>09034567832</td>
+                                                <td>
+                                                    Sep05,2020 07:00 AM
+                                                </td>
+                                                <td>20 min</td>
+
+                                                <td>
+                                                    <a href="#" class="complete-btn">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary round mr-1 mb-1 btn-sm">
+                                                            Complete
+                                                        </button>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <!-- modal on eye icon -->
+
+                                                    <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                        <i class="bx bx-show dashboard-eyeicon" data-toggle="modal"
+                                                            data-target="#viewhistory"></i>
+                                                    </div>
+                                                    <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                        <!-- prescription modal -->
+                                                        <a href="#">
+                                                            <i class="bx bxs-file-plus dashboard-eyeicon"
+                                                                data-toggle="modal" data-target="#prescription"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="/docVideoCall">
+                                                        <i class="bx bx-microphone"></i>
+                                                    </a>
+
+                                                    <a href="/docVideoCall">
+                                                        <i class="bx bx-video"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Doctor ABC</td>
+                                                <td>09034567832</td>
+                                                <td>
+                                                    Sep05,2020 07:00 AM
+                                                </td>
+                                                <td>20 min</td>
+
+                                                <td>
+                                                    <a href="#" class="complete-btn">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary round mr-1 mb-1 btn-sm">
+                                                            Complete
+                                                        </button>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                        <!--eye modal -->
+
+                                                        <i class="bx bx-show dashboard-eyeicon" data-toggle="modal"
+                                                            data-target="#viewhistory"></i>
+                                                    </div>
+
+                                                    <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                                        <!-- prescription modal -->
+                                                        <a href="#">
+                                                            <i class="bx bxs-file-plus dashboard-eyeicon"
+                                                                data-toggle="modal" data-target="#prescription"></i>
+                                                        </a>
+                                                    </div>
+
+                                                    <a href="/docVideoCall">
+                                                        <i class="bx bx-microphone"></i>
+                                                    </a>
+
+                                                    <a href="/docVideoCall">
+                                                        <i class="bx bx-video"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Patient table end -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <!-- END: Content-->
+
+    <!-- BEGIN: JS-->
+
+    <script>
+        function myFunction() {
+            var myWindow = window.open("/docVideoCall", "MsgWindow", "width=1000,height=1000");
+
+        }
+    </script>
+    <script src="/js/vendors.min.js"></script>
+
+    <script src="/js/vertical-menu-light.js"></script>
+    <script src="/js/app-menu.js"></script>
+    <script src="/js/app.js"></script>
+
+    <script src="/js/app-kanban.js"></script>
+
+    <!-- END: JS-->
+
+
+    <%- include('../Includes/End.ejs') %>

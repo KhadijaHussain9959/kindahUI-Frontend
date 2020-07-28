@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+
+    <meta name="author" content="PIXINVENT" />
+    <title><%= PageTitle %></title>
+
+    <link rel="stylesheet" type="text/css" href="/css/vendors.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-extended.css" />
+    <link rel="stylesheet" type="text/css" href="/css/components.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sweetalert2.min.css" />
+  </head>
+
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+
+  <body
+    class="vertical-layout vertical-menu-modern 1-column navbar-sticky footer-static bg-full-screen-image blank-page blank-page"
+    data-open="click"
+    data-menu="vertical-menu-modern"
+    data-col="1-column"
+  >
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+      <div class="content-overlay"></div>
+      <div class="content-wrapper">
+        <div class="content-header row"></div>
+        <div class="content-body">
+          <!-- register section starts -->
+          <section class="row flexbox-container">
+            <div class="col-sm-4 col-10">
+              <div class="card bg-authentication mb-0">
+                <div class="row m-0">
+                  <!-- register section left -->
+                  <div class="col-md-12 col-12 px-0">
+                    <div
+                      class="card disable-rounded-right mb-0 p-2 h-100 d-flex justify-content-center"
+                    >
+                      <div class="card-header pb-1">
+                        <div class="card-title">
+                          <h5 class="text-center mb-2">Sign Up</h5>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <p>
+                          <small>
+                            Please enter your details to sign up and Consult a
+                            doctor now</small
+                          >
+                        </p>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-body">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6 mb-50">
+                                <label for="inputfirstname4">first name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inputfirstname4"
+                                  placeholder="First name"
+                                />
+                              </div>
+                              <div class="form-group col-md-6 mb-50">
+                                <label for="inputlastname4">last name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inputlastname4"
+                                  placeholder="Last name"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-50">
+                              <label
+                                class="text-bold-600"
+                                for="exampleInputEmail1"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                placeholder="Email address"
+                              />
+                            </div>
+
+                            <div class="form-group mb-2">
+                              <label
+                                class="text-bold-600"
+                                for="exampleInputPassword1"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="exampleInputPassword1"
+                                placeholder="Password"
+                              />
+
+                              <div class="form-group mb-50">
+                                <label
+                                  class="text-bold-600"
+                                  for="exampleInputEmail1"
+                                  >Contact Number Wtih Country Code</label
+                                >
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <input
+                                      disabled="disabled"
+                                      type="number"
+                                      class="form-control"
+                                      id="exampleInputEmail1"
+                                      placeholder="+966"
+                                    />
+                                  </div>
+
+                                  <div class="col">
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="exampleInputEmail1"
+                                      placeholder="Contact Number"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button
+                              type="button"
+                              class="btn btn-primary glow position-relative w-100"
+                              data-toggle="modal"
+                              data-target="#primary"
+                            >
+                              SIGN UP
+                            </button>
+                          </form>
+                          <hr />
+                          <div class="text-center">
+                            <small class="mr-25">Already have an account?</small
+                            ><a href="/login"><small>Sign in</small> </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- image section right -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- password enter popup -->
+
+          <div class="modal-primary mr-1 mb-1 d-inline-block">
+            <!--primary theme Modal -->
+            <div
+              class="modal fade text-left"
+              id="primary"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel160"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                role="document"
+              >
+                <div class="modal-content">
+                  <div class="modal-header bg-primary">
+                    <h5
+                      class="modal-title white"
+                      style="color: #fff;"
+                      id="myModalLabel160"
+                    >
+                      ENTER CODE
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <i class="bx bx-x"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="text-center">
+                      <p>
+                        Please enter the password that has been sent to your
+                        email address.
+                      </p>
+                    </div>
+                    <br />
+                    <input
+                      type="number"
+                      id="squareText"
+                      class="form-control square"
+                      placeholder="Enter Code"
+                    />
+                    <br />
+                  </div>
+                  <div class="modal-footer">
+                    <!-- <a href="/login">
+                      <button type="button" class="btn btn-primary ml-1">
+                        <i class="bx bx-check d-block d-sm-none"></i>
+                        <span class="d-none d-sm-block">Submit</span>
+                      </button>
+                    </a> -->
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-success mr-1 mb-1"
+                      id="type-success"
+                    >
+                      Submit Success
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-danger mr-1 mb-1"
+                      id="type-error"
+                    >
+                      Submit Error
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- register section endss -->
+        </div>
+      </div>
+    </div>
+    <!-- END: Content-->
+
+    <script src="js/vendors.min.js"></script>
+    <script src="/js/sweetalert2.all.min.js"></script>
+    <script src="/js/polyfill.min.js"></script>
+    <script src="/js/sweet-alerts.js"></script>
+  </body>
+  <!-- END: Body-->
+</html>

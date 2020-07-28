@@ -1,0 +1,534 @@
+<%- include('../Includes/Head.ejs') %>
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/vendors.min.css" />
+   
+
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-extended.css" />
+    <link rel="stylesheet" type="text/css" href="/css/colors.css" />
+    <link rel="stylesheet" type="text/css" href="/css/components.css" />
+
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/vertical-menu.css" />
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!-- END: Custom CSS-->
+
+    <!-- Data table links -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"
+    />
+  </head>
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+
+  <!-- body tag and blue nav bar  -->
+  <%- include('../Includes/docNav.ejs') %>
+
+    <!-- complete side menu of doctor -->
+    <%- include('../Includes/docSideMenu.ejs') %>
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-body">
+          <section
+            id="sideMenuId"
+            style="
+              margin-right: -60%;
+              overflow: auto;
+              display: none;
+              width: 60%;
+              margin-top: 10px;
+            "
+          >
+            <!-- User new mail right area -->
+            <div class="kanban-sidebar" style="overflow: auto;">
+              <div class="card shadow-none quill-wrapper">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center border-bottom px-2 py-1 side-card-title"
+                >
+                  <h3 class="card-title side-card-title">
+                    <b>Patient History</b>
+                  </h3>
+                  <button
+                    type="button"
+                    class="close close-icon"
+                    onclick="viewHistory()"
+                  >
+                    <i class="bx bx-x"></i>
+                  </button>
+                </div>
+                <!-- form start -->
+
+                <div class="card-content side-bar">
+                  <div class="card-body slide-card">
+                    <br />
+                    <div class="media">
+                      <a class="pr-1" href="#">
+                        <img
+                          src="/assets/images/doctorprofile.jpg"
+                          alt="image"
+                          style="
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 50%;
+                            margin-left: 12px;
+                          "
+                        />
+                      </a>
+                      <div>
+                        <h5 class="media-heading">PATIENT ABC</h5>
+                        <div>
+                          <p>
+                            <b>Age</b>: ABC years old
+                            <br />
+                            <b>Visit Number</b>:May 02 , 2020
+                            <br />
+                            <b>Contact Number</b>: 12245476786
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-sidebar">
+                      <br />
+                      <div>
+                        <br />
+                        <div>
+                          <h6>
+                            <b>History and Exams</b>
+                          </h6>
+                          <p>
+                            Cookie candy dragée marzipan gingerbread pie
+                            pudding. Brownie fruitcake wafer bonbon gummi bears
+                            apple pie.
+                          </p>
+                        </div>
+
+                        <div>
+                          <h6>
+                            <b>Allergies</b>
+                          </h6>
+                          <p>
+                            Cookie candy dragée marzipan gingerbread pie
+                            pudding. Brownie fruitcake wafer bonbon gummi bears
+                            apple pie.
+                          </p>
+                        </div>
+
+                        <div>
+                          <h6>
+                            <b>Diagnosis</b>
+                          </h6>
+                          <p>
+                            Cookie candy dragée marzipan gingerbread pie
+                            pudding. Brownie fruitcake wafer bonbon gummi bears
+                            apple pie.
+                          </p>
+                        </div>
+
+                        <div>
+                          <h6>
+                            <b>RX</b>
+                          </h6>
+                          <p>
+                            Cookie candy dragée marzipan gingerbread pie
+                            pudding. Brownie fruitcake wafer bonbon gummi bears
+                            apple pie.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-light-secondary"
+                        onclick="viewHistory()"
+                        style="float: right;"
+                      >
+                        <span class="d-none d-sm-block">Close</span>
+                      </button>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br />
+          <div class="d-flex flex-row">
+            <div class="page-heading">
+              <h3>KINDAH PATIENTS</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <fieldset
+                class="form-group position-relative has-icon-left mx-75 mb-0"
+              >
+                <input
+                  type="text"
+                  class="form-control round"
+                  id="chat-search"
+                  placeholder="Search by MRN"
+                />
+                <div class="form-control-position">
+                  <i class="bx bx-search-alt text-dark"></i>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4">
+              <fieldset
+                class="form-group position-relative has-icon-left mx-75 mb-0"
+              >
+                <input
+                  type="text"
+                  class="form-control round"
+                  id="chat-search"
+                  placeholder="Search by Name"
+                />
+                <div class="form-control-position">
+                  <i class="bx bx-search-alt text-dark"></i>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4">
+              <fieldset
+                class="form-group position-relative has-icon-left mx-75 mb-0"
+              >
+                <input
+                  type="text"
+                  class="form-control round"
+                  id="chat-search"
+                  placeholder="Search by Phone Number"
+                />
+                <div class="form-control-position">
+                  <i class="bx bx-search-alt text-dark"></i>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <table id="kindahdatatable" class="display" style="width: 100%;">
+            <thead>
+              <tr>
+                <th class="thhead thead-img"></th>
+                <th class="thhead">MRN</th>
+                <th class="thhead">Full Name</th>
+                <th class="thhead">DoB</th>
+                <th class="thhead">Gender</th>
+                <th class="thhead">Email</th>
+                <th class="thhead">Phone Number</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN: Content JS-->
+
+    <!-- END: Content JS-->
+
+    <!-- BEGIN: JS-->
+
+    <script src="/js/vendors.min.js"></script>
+    <script src="/js/vertical-menu-light.js"></script>
+    <script src="/js/app-menu.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/slidevideocall.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"
+    ></script>
+
+    <!-- END: JS-->
+  </body>
+
+  <script>
+    /* Formatting function for row details - modify as you need */
+    function format(d) {
+      // `d` is the original data object for the row
+
+      return (
+        '<table style="width:100% ">' +
+        "<tr>" +
+        "<th class='thhead'>Visit Number</th>" +
+        "<th class='thhead'>Patient</th>" +
+        "<th class='thhead'>Doctor</th>" +
+        "<th class='thhead'>Phone</th>" +
+        "<th class='thhead'>Date</th>" +
+        "<th class='thhead'>Time</th>" +
+        "<th class='thhead'>Duration</th>" +
+        "<th class='thhead'>View </th>" +
+        "</tr>" +
+        "<tr>" +
+        "<td>1</td>" +
+        "<td>John</td>" +
+        "<td>DotorABC</td>" +
+        "<td>23456788</td>" +
+        "<td>Sept 08,2010</td>" +
+        "<td>12:00</td>" +
+        "<td>20min</td>" +
+        "<td onclick='viewHistory()'><a href='#' onclick='viewHistory();'>" +
+        " <i class='bx bxs-show call-log-eye-btn'></i></a> </td>" +
+        "</tr>" +
+        "<tr class='rows'>" +
+        "<td>2</td>" +
+        "<td>John</td>" +
+        "<td>DotorABC</td>" +
+        "<td>23456788</td>" +
+        "<td>Sept 08,2010</td>" +
+        "<td>12:00</td>" +
+        "<td>20min</td>" +
+        "<td onclick='viewHistory()'><a href='#' onclick='viewHistory();'>" +
+        " <i class='bx bxs-show call-log-eye-btn'></i></a> </td>" +
+        "</tr>" +
+        "<tr class='rows'>" +
+        "<td>3</td>" +
+        "<td>John</td>" +
+        "<td>DotorABC</td>" +
+        "<td>23456788</td>" +
+        "<td>Sept 08,2010</td>" +
+        "<td>12:00</td>" +
+        "<td>20min</td>" +
+        "<td onclick='viewHistory()'><a href='#' onclick='viewHistory();'>" +
+        " <i class='bx bxs-show call-log-eye-btn'></i></a> </td>" +
+        "</tr>" +
+        "</table>"
+      );
+    }
+
+    $(document).ready(function () {
+      var dataSet = [
+        {
+          id: "1",
+
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "2",
+
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "3",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "3",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "4",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "5",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "6",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "7",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "8",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "9",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "10",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "11",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "12",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "13",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+        {
+          id: "14",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+
+        {
+          id: "15",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+
+        {
+          id: "16",
+          MRN: "123",
+          firstnameandlast: "Patient ABC",
+          DOB: "Mar 13,2020",
+          gender: "male",
+          email: "abc@gmail.com",
+          mobno: "123456789",
+        },
+      ];
+
+      // var dataSet = [
+      // ["Tiger Nixon", "System Architect", "Edinburgh", "$320,800"],
+      // ["Tiger Nixon", "System Architect", "Edinburgh", "$320,800"],
+      // ];
+
+      var table = $("#kindahdatatable").DataTable({
+        data: dataSet,
+        scrollX: true,
+        columns: [
+          {
+            className: "details-control",
+            orderable: false,
+            data: null,
+            defaultContent: "",
+          },
+          { data: "MRN" },
+          { data: "firstnameandlast" },
+          { data: "DOB" },
+          { data: "gender" },
+          { data: "email" },
+          { data: "mobno" },
+        ],
+        order: [[1, "asc"]],
+      });
+
+      // Add event listener for opening and closing details
+      $("#kindahdatatable tbody").on(
+        "click",
+        "td.details-control",
+
+        function () {
+          var tr = $(this).closest("tr");
+          var row = table.row(tr);
+
+          if (row.child.isShown()) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass("shown");
+          } else {
+            // Open this row
+            row.child(format(row.data())).show();
+            tr.addClass("shown");
+          }
+        }
+      );
+    });
+
+    // $(kindahdatatable_length).find(div).remove();
+    // $("div").remove(".dataTables_length");
+  </script>
+
+<%- include('../Includes/End.ejs') %>
