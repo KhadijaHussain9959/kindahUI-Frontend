@@ -23,7 +23,7 @@
     "bootstrap": "^4.4.1",
     "easyrtc": "^1.1.0",
     "ejs": "^3.1.3",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "serve-static": "^1.8.0",
     "socket.io": "^1.7.4",
     "socket.io-client": "^2.3.0"
